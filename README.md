@@ -1,6 +1,6 @@
 # char2workspace
 
-### A Vivaldi script for setting unicode as workspace icons
+A Vivaldi script for setting unicode as workspace icons
 
 ---
 
