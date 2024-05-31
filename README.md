@@ -14,14 +14,16 @@ cd char2workspace
 ### Usage
 
 1. Open the `select Workspace Icon` menu and the `Emoji` tab
-2. Inspect window.html at `vivaldi://inspect/#apps`
-3. Open console and run the following
-
+2. Inspect window.html at
+```
+vivaldi://inspect/#apps
+```
+4. Open console and run the following
+   dsdsadad
 ```
 emoji2workspace("SOME-UNICODE ")
 ```
-
-To center certain unicode icons you can specify a spacing on the right (1-7)
+&#8193;&#8193;To center certain unicode icons you can specify a spacing on the right (1-7)
 
 ```
 emoji2workspace("", 5)
