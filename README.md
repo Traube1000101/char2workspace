@@ -19,7 +19,6 @@ cd char2workspace
 vivaldi://inspect/#apps
 ```
 4. Open console and run the following
-   dsdsadad
 ```
 emoji2workspace("SOME-UNICODE ")
 ```
