@@ -36,5 +36,6 @@ Link patch-vivaldi for easier reinstalling of the script after Vivaldi updates
 sudo ln -s $(realpath ./patch-vivaldi) /usr/bin/
 ```
 
-Set the `css` directory as your `custom ui modifications` directory to use `FiraCode Nerd Font`
+~~Set the `css` directory as your `custom ui modifications` directory to use `FiraCode Nerd Font`~~
+Now done with patch-vivaldi automatically
 ![custom ui modifications](custom-ui-modifications.png)
