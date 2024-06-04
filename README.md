@@ -22,7 +22,7 @@ vivaldi://inspect/#apps
 ```
 emoji2workspace("SOME-UNICODE ")
 ```
-&#8193;&#8193;To center certain unicode icons you can specify a spacing on the right (1-7)
+To center certain unicode icons you can specify a spacing on the right (1-7)
 
 ```
 emoji2workspace("", 5)
