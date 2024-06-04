@@ -10,6 +10,8 @@
 #            users can now use vivaldi://experiments to change CSS in UI
 
 mod_dir=$(realpath "$(dirname $0)")
+js_filename="char2workspace.js"
+css_filename="css/nerd-font-on-workspace-icons.css"
 
 vivaldi_installs=$(dirname $(find /opt -name "vivaldi-bin"))
 vivaldi_install_dirs=($vivaldi_installs)
@@ -50,16 +52,16 @@ else
     echo "window.html has already been patched!"
 fi
 
-#if [ -f "$mod_dir/custom.css" ] ; then
-#    echo copying custom.css
-#    sudo cp -f "$mod_dir/custom.css" "$dir/resources/vivaldi/style/custom.css"
-#else
-#    echo custom.css missing in $mod_dir
-#fi
-
-if [ -f "$mod_dir/custom.js" ]; then
-    echo copying custom.js
-    sudo cp -f "$mod_dir/custom.js" "$dir/resources/vivaldi/custom.js"
+if [ -f "$mod_dir/$css_filename" ] ; then
+    echo "copying $css_filename"
+    sudo cp -f "$mod_dir/$css_filename" "$dir/resources/vivaldi/style/custom.css"
 else
-    echo custom.js missing in $mod_dir
+    echo "$css_filename missing in $mod_dir"
+fi
+
+if [ -f "$mod_dir/$js_filename" ]; then
+    echo "copying $js_filename"
+    sudo cp -f "$mod_dir/$js_filename" "$dir/resources/vivaldi/custom.js"
+else
+    echo "$js_filename missing in $mod_dir"
 fi
